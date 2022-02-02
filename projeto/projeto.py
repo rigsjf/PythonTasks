@@ -63,15 +63,45 @@ def produto_mais_barato(dados, categoria):
     O parâmetro "categoria" é uma string contendo o nome de uma categoria.
     Essa função deverá retornar um dicionário representando o produto mais caro da categoria dada.
     '''
-    ...
+        
+    menor_preco = 0
+    maior_preco = 0
+    
+    for dado in dados:
+        if dado['categoria'] == categoria:
+            if float(dado['preco']) > maior_preco:
+                maior_preco = float(dado['preco'])
+    
+    for dado in dados:
+        if dado['categoria'] == categoria:
+            if float(dado['preco']) < maior_preco:
+                id_menor_preco = dado['id']
+    produto_menor_preco = {'id': id_menor_preco, 'preco' : menor_preco, 'categoria' : categoria }
+    return produto_menor_preco
 
 def top_10_caros(dados):
     '''
     O parâmetro "dados" deve ser uma lista de dicionários representando os produtos.
     Essa função deverá retornar uma lista de dicionários representando os 10 produtos mais caros.
     '''
-    ...
+    maior_preco = 0
+    produtos_top_10_mais_caros = []
 
+    for dado in dados:
+        if float(dado['preco']) > maior_preco:
+            maior_preco = float(dado['preco'])
+    produto_maior_preco = {'id': dado['id'], 'preco' : float(dado['preco']), 'categoria' : dado['categoria'] }
+    produtos_top_10_mais_caros.append(produto_maior_preco)
+
+    for dado in dados:
+        if float(dado['preco']) < produtos_top_10_mais_caros[0]['preco']:
+            for i in range (len(produtos_top_10_mais_caros)):
+                if float(dado['preco']) > produtos_top_10_mais_caros[i]['preco']:
+                    novo_top10 = {'id': dado['id'], 'preco' : dado['preco'], 'categoria' : dado['categoria'] }
+                    produtos_top_10_mais_caros[i].append(novo_top10)
+    
+    return  produtos_top_10_mais_caros
+    
 def top_10_baratos(dados):
     '''
     O parâmetro "dados" deve ser uma lista de dicionários representando os produtos.
@@ -129,17 +159,20 @@ def menu(dados):
             print(produtos_maior_preco)
 
         elif opcao_menu == 4:
-            produto_mais_barato(dados, categoria)
+            categorias = listar_categorias(dados)
+            produtos_menor_preco = []
+            for i in range (len(categorias)):
+                produtos_menor_preco.append(produto_mais_barato(dados, categorias[i]))
+            print(produtos_menor_preco)
 
         elif opcao_menu == 5:
-            top_10_caros(dados)
+            produtos_top10_mais_caros = top_10_caros(dados)
+            print(produtos_top10_mais_caros)
 
         elif opcao_menu == 6:
             top_10_baratos(dados)
 
         opcao_menu = int(input(mensagem))
-
-
 
 # Programa Principal - não modificar!
 d = obter_dados()
