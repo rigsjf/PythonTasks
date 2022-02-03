@@ -85,20 +85,21 @@ def top_10_caros(dados):
     Essa função deverá retornar uma lista de dicionários representando os 10 produtos mais caros.
     '''
     maior_preco = 0
+    todos_produtos = []
     produtos_top_10_mais_caros = []
+    # dados_aux = dados.copy()
+    # max(dado['preco'] for dado in todos_produtos)
 
     for dado in dados:
-        if float(dado['preco']) > maior_preco:
-            maior_preco = float(dado['preco'])
-    produto_maior_preco = {'id': dado['id'], 'preco' : float(dado['preco']), 'categoria' : dado['categoria'] }
-    produtos_top_10_mais_caros.append(produto_maior_preco)
+        cada_produto = {'id': dado['id'], 'preco' : float(dado['preco']), 'categoria' : dado['categoria'] }
+        todos_produtos.append(cada_produto)
 
-    for dado in dados:
-        if float(dado['preco']) < produtos_top_10_mais_caros[0]['preco']:
-            for i in range (len(produtos_top_10_mais_caros)):
-                if float(dado['preco']) > produtos_top_10_mais_caros[i]['preco']:
-                    novo_top10 = {'id': dado['id'], 'preco' : dado['preco'], 'categoria' : dado['categoria'] }
-                    produtos_top_10_mais_caros[i].append(novo_top10)
+        for produto in todos_produtos:
+            if produto['preco'] > maior_preco:
+                for i in range (len(produtos_top_10_mais_caros)):
+                    if float(dado['preco']) > produtos_top_10_mais_caros[i]['preco']:
+                        novo_top10 = {'id': dado['id'], 'preco' : dado['preco'], 'categoria' : dado['categoria'] }
+                        produtos_top_10_mais_caros[i].append(novo_top10)
     
     return  produtos_top_10_mais_caros
     

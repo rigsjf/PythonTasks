@@ -9,10 +9,18 @@
 # else:
 # 	print("not overlapping")
 
-mensagem = '''
-1. Cadastrar usuário
-2. Listar "usuários"
-3. Sair
-'''
+# mensagem = '''
+# 1. Cadastrar usuário
+# 2. Listar "usuários"
+# 3. Sair
+# '''
 
-opcao = int(input(mensagem))
+# opcao = int(input(mensagem))
+
+
+a_dictionary = {"a": 1, "a": 2, "a": 3, "d": 2, "e": 3}
+
+# get key with max value
+max_key = max(a_dictionary, key=a_dictionary.get)
+
+print(max_key)
