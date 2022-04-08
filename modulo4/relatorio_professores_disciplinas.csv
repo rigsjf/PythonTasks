@@ -1,0 +1,39 @@
+Matricula,Nome,Telefone,Nome_Disciplina,Qtde_Creditos
+1,"Gabriela Genir Marinho",+1-006-414-8797,"Cálculo 2",3
+2,"Marli de Holanda Opinvic",+1-008-628-9256x246,"Elementos do Marketing",3
+2,"Marli de Holanda Opinvic",+1-008-628-9256x246,"Mapeamento do Público",4
+2,"Marli de Holanda Opinvic",+1-008-628-9256x246,"Criação e Melhorias",5
+2,"Marli de Holanda Opinvic",+1-008-628-9256x246,"Mídias Sociais",6
+3,"Walter Mário de Muniz",+55-11-99999-8888,"Espanhol Básico",2
+3,"Walter Mário de Muniz",+55-11-99999-8888,"Espanhol Intermediário",3
+4,"Cléber de Vasconcelos",+55-11-4224-2626,Python,3
+5,"Selena Caroline Cavalcante da Silva",+1-013-001-8838,"Cálculo 1",2
+6,"Gabriela da Silva de Macedo",+1-026-402-2651,"Comércio exterior",4
+6,"Gabriela da Silva de Macedo",+1-026-402-2651,"Gestão de Projetos",5
+7,"Heitor Raul de Meireles Rilia",+1-032-081-6436,"Francês Básico",2
+7,"Heitor Raul de Meireles Rilia",+1-032-081-6436,"Francês Intermediário",3
+7,"Heitor Raul de Meireles Rilia",+1-032-081-6436,"Francês Avançado",4
+8,"Gabriela Maria Ribohi Valente",+1-037-591-5560x81884,Probabilidade,4
+9,"Lúcio Ceilson",+1-019-168-1103x30298,"Admin. e Contabilidade",2
+10,"Marco Yumoma Neto",+1-024-173-1193x0353,"Concepções de Linguagem",2
+10,"Marco Yumoma Neto",+1-024-173-1193x0353,"Gêneros Literários",3
+10,"Marco Yumoma Neto",+1-024-173-1193x0353,"Variação Linguística",4
+10,"Marco Yumoma Neto",+1-024-173-1193x0353,"Literaturas na Educação Básica",5
+11,"Áureo de Palhares Neiol",+55-51-92929-5550,"Alemão Básico",2
+11,"Áureo de Palhares Neiol",+55-51-92929-5550,"Alemão Intermediário",3
+11,"Áureo de Palhares Neiol",+55-51-92929-5550,"Alemão Avançado",4
+12,"Sílvia Rosimeire Franco",+55-11-91010-2020,"Data Science e IA",5
+13,"João Osvaldo de Oliva do Prado",+55-11-97887-8007,"Circuitos Elétricos",3
+13,"João Osvaldo de Oliva do Prado",+55-11-97887-8007,"Instalações Elétricas",4
+14,"Flaviana Supugeko de Arantes",+55-21-90909-4444,"Gestão de Competências",3
+14,"Flaviana Supugeko de Arantes",+55-21-90909-4444,"Identif. Realoc. de Talentos",4
+15,"Ronaldo Severino Berrea Bozuga",+1-047-466-1919x28434,"Inglês Avançado",4
+15,"Ronaldo Severino Berrea Bozuga",+1-047-466-1919x28434,"Espanhol Avançado",4
+16,"Romildo Ademar da Silva Fragoso Júnior",+1-051-279-6304x91019,"Equações Lineares",5
+17,"Bella Biwo",+1-060-465-8808x51762,"Matemática Financeira",3
+17,"Bella Biwo",+1-060-465-8808x51762,"Mercado de Capitais",4
+18,"Márcio de Oliveira Negrão",+1-061-832-1376x6059,"Comportam. do Consumidor",3
+18,"Márcio de Oliveira Negrão",+1-061-832-1376x6059,"Introd. Psicologia",2
+19,"Décio de Leão do Amaral Terceiro",+1-065-022-0820,"Inglês Básico",2
+19,"Décio de Leão do Amaral Terceiro",+1-065-022-0820,"Inglês Intermediário",3
+20,"Moacyr Arthur Góis",+55-19-90001-8889,"Banco de Dados",6
